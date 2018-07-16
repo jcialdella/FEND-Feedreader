@@ -45,9 +45,8 @@ $(function() {
   // This suite is about menu functionality
   describe('The menu', () => {
     // Test that ensures the menu element is hidden by default.
+    let c = document.querySelector('body');
     it('element is hidden by default', () => {
-      let c;
-      c = document.querySelector('body');
       expect(c).toHaveClass('menu-hidden');
     })
 
@@ -56,19 +55,15 @@ $(function() {
      * clicked and does it hide when clicked again.
      */
     it('changes visibility when clicked', () => {
-      let hidn, notHidn;
       document.querySelector('.menu-icon-link').click();
-      notHidn = document.querySelector('body');
-      expect(notHidn).not.toHaveClass('menu-hidden');
+      expect(c).not.toHaveClass('menu-hidden');
       document.querySelector('.menu-icon-link').click();
-      hidn = document.querySelector('body');
-      expect(hidn).toHaveClass('menu-hidden');
+      expect(c).toHaveClass('menu-hidden');
     })
 
   });
   // This test suite is about initial entries upon load.
   describe('Initial Entries', () => {
-    let e;
     /* Test that ensures when the loadFeed function is called and completes its work,
      * there is at least a single .entry element within the .feed container.
      */
@@ -77,7 +72,7 @@ $(function() {
     });
 
     it('at least a single .entry element', () => {
-      e = document.querySelector('.feed');
+      let e = document.querySelector('.feed');
       expect(e.childElementCount).toBeGreaterThan(0);
     });
 
