@@ -1,5 +1,5 @@
 # Project Overview
-This project involves testing, via Jasmine, a web-based application that reads RSS feeds. [Jasmine]http://jasmine.github.io/) is available at github.  Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.
+This project involves testing, via Jasmine, a web-based application that reads RSS feeds. [Jasmine](http://jasmine.github.io/) is available at github.  Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.
 
 ## Basic Functionality
 The user will click on any of the following items in the Spec List to run a test.
